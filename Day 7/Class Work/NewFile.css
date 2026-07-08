@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.loginDiv {
+	border : 2px solid black;
+	width : 270px ;
+	color : red ;
+	border-radius : 20px ;
+	position: absolute;
+	top : 300px ;
+	left : 600px ;
+	
+}
+
+.loginbtn {
+	cursor : pointer ;
+	background-color : blue;
+	color : white;
+	border-radius : 10px;
+}
