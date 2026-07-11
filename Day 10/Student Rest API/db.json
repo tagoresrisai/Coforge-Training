@@ -1,0 +1,37 @@
+{
+  "employees": [
+    {
+      "employeeId": 102,
+      "firstName": "Diya",
+      "lastName": "Patel",
+      "email": "diya.patel@example.com",
+      "mobileNumber": "9876543211",
+      "id": "ObnMASD6a5A"
+    },
+    {
+      "employeeId": 103,
+      "firstName": "Vihaan",
+      "lastName": "Reddy",
+      "email": "vihaan.reddy@example.com",
+      "mobileNumber": "9876543212",
+      "id": "0BBi7bvKORE"
+    },
+    {
+      "employeeId": 104,
+      "firstName": "Ananya",
+      "lastName": "Gupta",
+      "email": "ananya.gupta@example.com",
+      "mobileNumber": "9876543213",
+      "id": "ilrRzlupdFs"
+    },
+    {
+      "employeeId": 105,
+      "firstName": "Aditya",
+      "lastName": "Verma",
+      "email": "aditya.verma@example.com",
+      "mobileNumber": "9898989898",
+      "id": "elGZRFT5lBs"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
