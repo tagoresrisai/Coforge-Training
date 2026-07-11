@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript DOM Manipulation Assignment</title>
+
+<style>
+img {
+	width: 300px;
+	height: 200px;
+	border: 2px solid black;
+}
+</style>
+
+<script>
+	function changeHeading() {
+		document.getElementById("heading").innerHTML = "Welcome to JavaScript DOM";
+	}
+
+	function changeBackground() {
+		document.body.style.backgroundColor = "lightblue";
+	}
+
+	function changeImage() {
+		document.getElementById("myImage").src = "https://picsum.photos/id/237/300/200";
+	}
+
+	function hideParagraph() {
+		document.getElementById("para").style.display = "none";
+	}
+
+	function showParagraph() {
+		document.getElementById("para").style.display = "block";
+	}
+
+	function increaseFont() {
+		document.getElementById("fontPara").style.fontSize = "30px";
+	}
+</script>
+
+</head>
+
+<body>
+
+	<h1 align="center">JavaScript DOM Manipulation Assignment</h1>
+
+
+	<div class="section">
+		<h2>1. Change Text Content</h2>
+
+		<h3 id="heading">Hello Students</h3>
+
+		<button onclick="changeHeading()">Change Heading</button>
+	</div>
+
+
+	<div class="section">
+		<h2>2. Change Background Color</h2>
+
+		<button onclick="changeBackground()">Change Background Color
+		</button>
+	</div>
+	
+
+	<div class="section">
+		<h2>3. Change Image</h2>
+
+		<img src="https://picsum.photos/id/1015/300/200" id="myImage"> <br> <br>
+
+		<button onclick="changeImage()">Change Image</button>
+	</div>
+	
+
+
+	<div class="section">
+		<h2>4. Hide and Show Paragraph</h2>
+
+		<p id="para">This paragraph can be hidden and shown using buttons.</p>
+
+		<button onclick="hideParagraph()">Hide Paragraph</button>
+
+		<button onclick="showParagraph()">Show Paragraph</button>
+	</div>
+	
+
+	<div class="section">
+		<h2>5. Change Font Size</h2>
+
+		<p id="fontPara">Click the button to increase my font size.</p>
+
+		<button onclick="increaseFont()">Increase Font Size</button>
+	</div>
+
+</body>
+</html>
