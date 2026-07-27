@@ -1,0 +1,37 @@
+<div class="Header">
+		<h1>Employee Management System</h1>
+</div>
+<br>
+
+<form #employeeForm="ngForm"
+      (ngSubmit)="insertEmployee(employeeForm.value)">
+	<div class="content">
+		<table>
+			<tr>
+			<td>Employee ID : </td>
+			<td><input type="text" id="eid" name="eid" [(ngModel)]="employee.eid"></td>
+			</tr>
+			<tr>
+			<td>Employee Name : </td>
+			<td><input type="text" id="ename" name="ename" [(ngModel)]="employee.ename"></td>
+			</tr>
+			<tr>
+			<td>Employee Salary : </td>
+			<td><input type="text" name="esalary" [(ngModel)]="employee.esalary"></td>
+			</tr>
+			<tr>
+			<td>Department Number : </td>
+			<td><input type="text" name="dno" [(ngModel)]="employee.dno"></td>
+			</tr>
+		</table>
+		<br>
+		<input type="submit" value="Insert">
+        <input type="button" value="Update" (click)="updateEmployee(employeeForm.value)">
+        <input type="button" value="Delete" (click)="deleteEmployee(employeeForm.value)">
+		<input type="submit" value="Find" class="btn-success">
+		<input type="submit" value="FindAll" class="btn-info"><br>
+	</div>
+</form>
+<br><br>
+
+<h3>{{ result }}</h3>
